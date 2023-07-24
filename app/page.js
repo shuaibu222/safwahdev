@@ -1,15 +1,21 @@
 import { Poppins } from 'next/font/google';
-import Nav from './components/Nav';
 import Link from 'next/link';
 import { LiaArrowDownSolid } from 'react-icons/lia';
+import dynamic from 'next/dynamic';
+import NavSpinner from './components/NavSpinner';
 
 const inter = Poppins({ subsets: ['devanagari'], weight: '600' });
 
+const Nav = dynamic(() => import('./components/Nav'), {
+  ssr: false,
+  loading: () => <NavSpinner />,
+});
+
 export default function Home() {
   return (
-    <main className='mx-auto my-0 min-h-screen w-11/12 sm:max-w-7xl'>
+    <main className=' min-h-screen'>
       <Nav />
-      <section className='mt-28 flex h-full flex-col'>
+      <section className='mx-auto mt-28 flex  h-full w-11/12 flex-col sm:max-w-7xl'>
         <h1 className='sm:text-xlg flex flex-col gap-1 text-center text-lg dark:text-white md:text-2xl'>
           Become a
           <br />

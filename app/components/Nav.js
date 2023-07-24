@@ -28,7 +28,7 @@ export default function Nav() {
 
   return (
     <header>
-      <div className='container mx-auto my-0 flex items-center justify-between py-7'>
+      <div className='container mx-auto my-0 flex w-11/12 items-center justify-between py-7 sm:max-w-7xl'>
         <Link
           href='/'
           className={`bg-gradient-to-r from-pink-600 to-yellow-400 bg-clip-text text-2xl text-transparent ${inter.className}`}
@@ -84,8 +84,8 @@ export default function Nav() {
       <div
         className={
           isOpen
-            ? 'w-full rounded-md bg-gradient-to-tr from-pink-600 to-yellow-400 p-5 text-white transition duration-100 md:hidden'
-            : 'hidden w-full rounded-md bg-gradient-to-tr from-pink-600 to-yellow-400 p-5 text-white transition duration-100 md:hidden'
+            ? 'mx-auto my-0 w-10/12 rounded-md bg-gradient-to-tr from-pink-600 to-yellow-400 p-5 text-white transition duration-100 md:hidden'
+            : 'mx-auto my-0 hidden w-10/12 rounded-md bg-gradient-to-tr from-pink-600 to-yellow-400 p-5 text-white transition duration-100 md:hidden'
         }
       >
         <ul className='flex flex-col gap-2'>

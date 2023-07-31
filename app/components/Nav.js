@@ -33,7 +33,7 @@ export default function Nav() {
           href='/'
           className={`bg-gradient-to-r from-pink-600 to-yellow-400 bg-clip-text text-2xl text-transparent ${inter.className}`}
         >
-          safwahdev.
+          safwahdev
         </Link>
         <nav className='hidden md:block'>
           <ul className='flex items-center gap-6'>

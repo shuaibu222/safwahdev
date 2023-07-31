@@ -1,6 +1,7 @@
 import { Poppins } from 'next/font/google';
 import Link from 'next/link';
 import { LiaArrowDownSolid } from 'react-icons/lia';
+import { SiInstructure } from 'react-icons/si'
 import dynamic from 'next/dynamic';
 import NavSpinner from './components/NavSpinner';
 
@@ -13,9 +14,9 @@ const Nav = dynamic(() => import('./components/Nav'), {
 
 export default function Home() {
   return (
-    <main className=' min-h-screen'>
+    <main className='min-h-screen'>
       <Nav />
-      <section className='mx-auto mt-28 flex  h-full w-11/12 flex-col sm:max-w-7xl'>
+      <section className='mx-auto pt-28 pb-16 flex w-11/12 flex-col sm:max-w-7xl'>
         <h1 className='sm:text-xlg flex flex-col gap-1 text-center text-lg dark:text-white md:text-2xl'>
           Become a
           <br />
@@ -46,6 +47,49 @@ export default function Home() {
           <LiaArrowDownSolid />
         </Link>
       </section>
+      <article className='flex flex-col gap-8 w-11/12 mx-auto sm:max-w-7xl pt-20 pb-20'>
+        <h1 className='text-3xl'>
+          Why choose us?
+        </h1>
+        <section className='grid grid-cols-4 gap-5'>
+          <div className='flex flex-col items-center gap-5 shadow-lg text-center p-6 rounded-lg'>
+            <span className='text-6xl'>
+              <SiInstructure className='text-orange-500' />
+            </span>
+            <p className='text-2xl'>Structured roadmap</p>
+            <p>
+              lorem ipsum dolor sit amet, sed diam incididunt dolore magna aliquy eu fugiat nulla pari lob decrypt et dolore magna aliquy.
+            </p>
+          </div>
+          <div className='flex flex-col items-center gap-5 shadow-lg text-center p-6 rounded-lg'>
+            <span className='text-6xl'>
+              <SiInstructure className='text-orange-500' />
+            </span>
+            <p className='text-2xl'>Structured roadmap</p>
+            <p>
+              lorem ipsum dolor sit amet, sed diam incididunt dolore magna aliquy eu fugiat nulla pari lob decrypt et dolore magna aliquy.
+            </p>
+          </div>
+          <div className='flex flex-col items-center gap-5 shadow-lg text-center p-6 rounded-lg'>
+            <span className='text-6xl'>
+              <SiInstructure className='text-orange-500' />
+            </span>
+            <p className='text-2xl'>Structured roadmap</p>
+            <p>
+              lorem ipsum dolor sit amet, sed diam incididunt dolore magna aliquy eu fugiat nulla pari lob decrypt et dolore magna aliquy.
+            </p>
+          </div>
+          <div className='flex flex-col items-center gap-5 shadow-lg text-center p-6 rounded-lg'>
+            <span className='text-6xl'>
+              <SiInstructure className='text-orange-500' />
+            </span>
+            <p className='text-2xl'>Structured roadmap</p>
+            <p>
+              lorem ipsum dolor sit amet, sed diam incididunt dolore magna aliquy eu fugiat nulla pari lob decrypt et dolore magna aliquy.
+            </p>
+          </div>
+        </section>
+      </article>
     </main>
   );
 }

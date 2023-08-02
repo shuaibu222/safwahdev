@@ -2,7 +2,7 @@ import './globals.css';
 import { Poppins } from 'next/font/google';
 import Providers from './components/providers';
 
-const inter = Poppins({ subsets: ['devanagari'], weight: '300' });
+const inter = Poppins({ subsets: ['devanagari'], weight: '400' });
 
 export const metadata = {
   title: 'Safwahdev Coding School',

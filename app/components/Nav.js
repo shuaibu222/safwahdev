@@ -68,7 +68,7 @@ export default function Nav() {
             </Link>
             <Link
               href='#'
-              className='rounded-lg bg-orange-500 bg-gradient-to-r px-3 py-2'
+              className='rounded-lg bg-orange-500 bg-gradient-to-r px-3 py-2 text-white'
             >
               Sign up
             </Link>

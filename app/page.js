@@ -53,62 +53,62 @@ const technologies = [
   {
     name: 'HTML5',
     icon: <FaHtml5 />,
-    bgcolor: 'bg-orange-500',
+    bgcolor: 'hover:text-orange-500',
   },
   {
     name: 'CSS3',
     icon: <FaCss3Alt />,
-    bgcolor: 'bg-blue-600',
+    bgcolor: 'hover:text-blue-600',
   },
   {
     name: 'JavaScript',
     icon: <BiLogoJavascript />,
-    bgcolor: 'bg-yellow-400',
+    bgcolor: 'hover:text-yellow-400',
   },
   {
     name: 'Git',
     icon: <FaGitAlt />,
-    bgcolor: 'bg-orange-500',
+    bgcolor: 'hover:text-orange-500',
   },
   {
     name: 'React js',
     icon: <FaReact />,
-    bgcolor: 'bg-teal-300',
+    bgcolor: 'hover:text-teal-300',
   },
   {
     name: 'Vue js',
     icon: <FaVuejs />,
-    bgcolor: 'bg-green-600',
+    bgcolor: 'hover:text-green-600',
   },
   {
     name: 'Angular js',
     icon: <FaAngular />,
-    bgcolor: 'bg-red-600',
+    bgcolor: 'hover:text-red-600',
   },
   {
     name: 'Tailwind CSS',
     icon: <BiLogoTailwindCss />,
-    bgcolor: 'bg-cyan-500',
+    bgcolor: 'hover:text-cyan-500',
   },
   {
     name: 'Webpack',
     icon: <SiWebpack />,
-    bgcolor: 'bg-blue-300/60',
+    bgcolor: 'hover:text-blue-300/60',
   },
   {
     name: 'NPM',
     icon: <FaNpm />,
-    bgcolor: 'bg-red-600',
+    bgcolor: 'hover:text-red-600',
   },
   {
     name: 'Jest js',
     icon: <SiJest />,
-    bgcolor: 'bg-lime-400',
+    bgcolor: 'hover:text-lime-400',
   },
   {
     name: 'Next js',
     icon: <TbBrandNextjs />,
-    bgcolor: 'bg-white',
+    bgcolor: '',
   },
 ];
 
@@ -133,7 +133,7 @@ export default function Home() {
         </p>
         <Link
           href='signup'
-          className='hover:delay-50 mt-7 self-center rounded-md border-2 border-black px-5 py-3 text-sm  hover:bg-orange-50 hover:transition dark:border-orange-100 dark:hover:bg-orange-100 dark:hover:text-black sm:text-lg'
+          className='mt-7 self-center rounded-md border-2 border-black px-5 py-3 text-sm  dark:border-orange-100 sm:text-lg'
         >
           Sign up it's free!
         </Link>
@@ -182,10 +182,14 @@ export default function Home() {
             return (
               <div
                 key={i}
-                className={`grid place-content-center gap-3 border-2 px-10 py-8 hover:transition-all hover:delay-75 hover:${bgcolor}`}
+                className={`grid place-content-center gap-3 px-10 py-8 hover:transition-all hover:delay-75`}
               >
-                <div className='grid place-content-center text-8xl'>{icon}</div>
-                <p className='text-center text-lg'>{name}</p>
+                <div
+                  className={`grid place-content-center ${bgcolor} hover:delay-50 text-9xl hover:transition`}
+                >
+                  {icon}
+                </div>
+                <p className='text-center text-base'>{name}</p>
               </div>
             );
           })}

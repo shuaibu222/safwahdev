@@ -2,7 +2,7 @@ import './globals.css';
 import { Poppins } from 'next/font/google';
 import Providers from './components/providers';
 
-const inter = Poppins({ subsets: ['devanagari'], weight: '400' });
+const inter = Poppins({ subsets: ['devanagari'], weight: '300' });
 
 export const metadata = {
   title: 'Safwahdev Coding School',
@@ -17,7 +17,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang='en' className='scroll-smooth'>
       <body
-        className={`scroll-smooth bg-white text-sm dark:bg-black dark:text-white ${inter.className}`}
+        className={`bg-white text-sm dark:bg-black dark:text-white ${inter.className}`}
       >
         <Providers>{children}</Providers>
       </body>

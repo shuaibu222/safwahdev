@@ -10,7 +10,11 @@ module.exports = {
     './src/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
-    extend: {},
+    extend: {
+      gridTemplateColumns: {
+        12: 'repeat(auto-fit, minmax(180px, 1fr))',
+      },
+    },
   },
   plugins: [],
 };

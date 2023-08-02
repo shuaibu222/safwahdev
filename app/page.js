@@ -135,7 +135,7 @@ export default function Home() {
           href='signup'
           className='mt-7 self-center rounded-md border-2 border-black px-5 py-3 text-sm  dark:border-orange-100 sm:text-lg'
         >
-          Sign up it's free!
+          Explore curriculum!
         </Link>
         <Link
           href='#choose'
@@ -194,6 +194,12 @@ export default function Home() {
             );
           })}
         </section>
+      </article>
+      <article className='mx-auto flex w-11/12 flex-col gap-20 pb-20 pt-20 sm:max-w-7xl'>
+        <div className='flex flex-col gap-5'>
+          <h1 className='text-3xl font-bold md:text-4xl'>Free web templates</h1>
+          <div className='h-1 w-24 bg-orange-500'></div>
+        </div>
       </article>
     </main>
   );

@@ -31,20 +31,27 @@ export default function Nav() {
       <div className='container mx-auto my-0 flex w-11/12 items-center justify-between py-7 sm:max-w-7xl'>
         <Link
           href='/'
-          className={`bg-gradient-to-r from-pink-600 to-yellow-400 bg-clip-text text-2xl text-transparent ${inter.className}`}
+          className={`bg-gradient-to-r from-pink-600 to-yellow-400 bg-clip-text text-xl text-transparent ${inter.className}`}
         >
           safwahdev
         </Link>
         <nav className='hidden md:block'>
-          <ul className='flex items-center gap-6'>
+          <ul className='flex items-center gap-3 md:gap-4'>
             <li className='border-b-2 border-b-transparent px-1 py-3 hover:border-orange-500 hover:text-orange-500 hover:transition-all hover:duration-150 hover:ease-in-out dark:text-orange-50 dark:hover:text-orange-500'>
               <Link href='paths'>About</Link>
             </li>
             <li className='border-b-2 border-b-transparent px-1 py-3 hover:border-orange-500 hover:text-orange-500 hover:transition-all hover:duration-150 hover:ease-in-out dark:text-orange-50 dark:hover:text-orange-500'>
-              <Link href='paths'>Syllabus</Link>
+              <Link href='bootcamp'>Bootcamps</Link>
             </li>
             <li className='border-b-2 border-b-transparent px-1 py-3 hover:border-orange-500 hover:text-orange-500 hover:transition-all hover:duration-150 hover:ease-in-out dark:text-orange-50 dark:hover:text-orange-500'>
-              <Link href='bootcamp'>Bootcamps</Link>
+              <Link href='bootcamp'>Get certified</Link>
+            </li>
+            <li className='relative border-b-2 border-b-transparent px-1 py-3 hover:border-orange-500 hover:text-orange-500 hover:transition-all hover:duration-150 hover:ease-in-out dark:text-orange-50 dark:hover:text-orange-500'>
+              <span class='absolute right-0 top-1 flex h-3 w-3'>
+                <span class='absolute inline-flex h-full w-full animate-ping rounded-full bg-orange-500 opacity-75'></span>
+                <span class='relative inline-flex h-3 w-3 rounded-full bg-orange-500'></span>
+              </span>
+              <Link href='bootcamp'>Templates</Link>
             </li>
           </ul>
         </nav>
@@ -70,7 +77,7 @@ export default function Nav() {
               href='#'
               className='rounded-lg bg-orange-500 bg-gradient-to-r px-3 py-2 text-white'
             >
-              Sign up
+              Get started
             </Link>
           </div>
         </div>
@@ -98,19 +105,16 @@ export default function Nav() {
           <li className='border-b-2 border-b-transparent px-1 py-3 text-center hover:rounded hover:bg-black hover:text-white  hover:transition-all hover:duration-150 hover:ease-in-out'>
             <Link href='bootcamp'>Bootcamps</Link>
           </li>
+          <li className='border-b-2 border-b-transparent px-1 py-3 text-center hover:rounded hover:bg-black hover:text-white  hover:transition-all hover:duration-150 hover:ease-in-out'>
+            <Link href='bootcamp'>Get certified</Link>
+          </li>
         </ul>
         <div className='mt-6 grid items-center gap-3 dark:text-orange-50'>
           <div className='flex cursor-pointer items-center justify-center'>
             {currentTheme === 'dark' ? (
-              <HiSun
-                onClick={() => setTheme('light')}
-                className=' cursor-pointer text-2xl'
-              />
+              <HiSun onClick={() => setTheme('light')} className='text-2xl' />
             ) : (
-              <HiMoon
-                onClick={() => setTheme('dark')}
-                className=' cursor-pointer text-2xl'
-              />
+              <HiMoon onClick={() => setTheme('dark')} className='text-2xl' />
             )}
           </div>
           <Link

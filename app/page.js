@@ -20,6 +20,7 @@ import {
 } from 'react-icons/fa';
 import dynamic from 'next/dynamic';
 import NavSpinner from './components/NavSpinner';
+import Image from 'next/image';
 
 const inter = Poppins({ subsets: ['devanagari'], weight: '600' });
 
@@ -53,7 +54,7 @@ const technologies = [
   {
     name: 'HTML5',
     icon: <FaHtml5 />,
-    bgcolor: 'hover:text-orange-500',
+    bgcolor: 'hover:text-orange-600',
   },
   {
     name: 'CSS3',
@@ -68,7 +69,7 @@ const technologies = [
   {
     name: 'Git',
     icon: <FaGitAlt />,
-    bgcolor: 'hover:text-orange-500',
+    bgcolor: 'hover:text-orange-600',
   },
   {
     name: 'React js',
@@ -103,7 +104,7 @@ const technologies = [
   {
     name: 'Jest js',
     icon: <SiJest />,
-    bgcolor: 'hover:text-lime-400',
+    bgcolor: 'hover:text-lime-500',
   },
   {
     name: 'Next js',
@@ -195,10 +196,30 @@ export default function Home() {
           })}
         </section>
       </article>
-      <article className='mx-auto flex w-11/12 flex-col gap-20 pb-20 pt-20 sm:max-w-7xl'>
+      <article className='mx-auto flex w-11/12 flex-col gap-10 pb-20 pt-20 sm:max-w-7xl'>
         <div className='flex flex-col gap-5'>
           <h1 className='text-3xl font-bold md:text-4xl'>Free web templates</h1>
           <div className='h-1 w-24 bg-orange-500'></div>
+        </div>
+        <div className='mb-10'>
+          <p>
+            Learn how to structure and build a website using ready-made and
+            well-designed templates.
+          </p>
+        </div>
+        <div className='flex flex-col items-center gap-7'>
+          <Image
+            width={1200}
+            height={831}
+            alt='main-template'
+            className=' rounded-lg brightness-50'
+            src={
+              'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fmiro.medium.com%2Fmax%2F3200%2F0*OFrVIaXkKTr6Fnqh&f=1&nofb=1&ipt=5fbb07c45fd33a7d2c707b34e38c2475c7ed331276890f4c3cb0d35a17929785&ipo=images'
+            }
+          />
+          <button className='rounded border-none bg-orange-500 px-4 py-3 text-base text-white'>
+            Browse for More
+          </button>
         </div>
       </article>
     </main>

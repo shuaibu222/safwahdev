@@ -36,7 +36,7 @@ export default function Nav() {
           safwahdev
         </Link>
         <nav className='hidden md:block'>
-          <ul className='flex items-center gap-3 md:gap-4'>
+          <ul className='flex items-center gap-3 text-sm md:gap-4'>
             <li className='border-b-2 border-b-transparent px-1 py-3 hover:border-orange-500 hover:text-orange-500 hover:transition-all hover:duration-150 hover:ease-in-out dark:text-orange-50 dark:hover:text-orange-500'>
               <Link href='paths'>About</Link>
             </li>

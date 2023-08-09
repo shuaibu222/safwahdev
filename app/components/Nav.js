@@ -38,9 +38,6 @@ export default function Nav() {
         <nav className='hidden md:block'>
           <ul className='flex items-center gap-3 text-sm md:gap-4'>
             <li className='border-b-2 border-b-transparent px-1 py-3 hover:border-orange-500 hover:text-orange-500 hover:transition-all hover:duration-150 hover:ease-in-out dark:text-orange-50 dark:hover:text-orange-500'>
-              <Link href='paths'>About</Link>
-            </li>
-            <li className='border-b-2 border-b-transparent px-1 py-3 hover:border-orange-500 hover:text-orange-500 hover:transition-all hover:duration-150 hover:ease-in-out dark:text-orange-50 dark:hover:text-orange-500'>
               <Link href='bootcamp'>Bootcamps</Link>
             </li>
             <li className='border-b-2 border-b-transparent px-1 py-3 hover:border-orange-500 hover:text-orange-500 hover:transition-all hover:duration-150 hover:ease-in-out dark:text-orange-50 dark:hover:text-orange-500'>
@@ -96,9 +93,6 @@ export default function Nav() {
         }
       >
         <ul className='flex flex-col gap-2'>
-          <li className='border-b-2 border-b-transparent px-1 py-3 text-center hover:rounded hover:bg-black hover:text-white  hover:transition-all hover:duration-150 hover:ease-in-out'>
-            <Link href='paths'>About</Link>
-          </li>
           <li className='border-b-2 border-b-transparent px-1 py-3 text-center hover:rounded hover:bg-black hover:text-white  hover:transition-all hover:duration-150 hover:ease-in-out'>
             <Link href='paths'>Syllabus</Link>
           </li>

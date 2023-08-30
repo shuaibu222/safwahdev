@@ -222,14 +222,7 @@ export default function Home() {
           </button>
         </div>
       </article>
-      <article className='mb-6 bg-orange-500'>
-        <section className='mx-auto flex w-11/12 flex-col items-center gap-5 pb-20 pt-20 text-white sm:max-w-7xl'>
-          <p className='text-center text-4xl'>Start your journey today!</p>
-          <button className='rounded-xl bg-black px-5 py-4 text-lg'>
-            Sign up it's free!
-          </button>
-        </section>
-      </article>
+    
     </main>
   );
 }

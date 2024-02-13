@@ -118,29 +118,29 @@ export default function Home() {
     <main className='min-h-screen'>
       <Nav />
       <section className='mx-auto flex w-11/12 flex-col pb-16 pt-28 sm:max-w-7xl'>
-        <h1 className='sm:text-xlg flex flex-col gap-1 text-center text-lg dark:text-white md:text-2xl'>
+        <h1 className='sm:text-xlg flex flex-col gap-1 text-lg dark:text-white md:text-2xl'>
           Become a
           <br />
           <span
-            className={`bg-gradient-to-r from-pink-600 to-yellow-400 bg-clip-text py-5 text-5xl text-transparent sm:text-6xl md:text-8xl ${inter.className}`}
+            className={`py-5 text-5xl sm:text-6xl md:text-7xl ${inter.className}`}
           >
-            Frontend Engineer
+            Software Engineer
           </span>
         </h1>
-        <p className='mx-auto my-0 w-4/5 text-center text-base dark:text-orange-50 sm:w-2/3 md:w-1/2 md:text-lg'>
-          An intensive Frontend Engineer Roadmap designed with resources to
+        <p className='text-base dark:text-orange-50 sm:w-2/3 md:w-1/2 md:text-lg'>
+          with this intensive Frontend Engineer Roadmap designed with resources to
           guide you succeed in the web development industry
           <br /> from zero to pro!
         </p>
         <Link
           href='signup'
-          className='mt-7 self-center rounded-md border-2 border-black px-5 py-3 text-sm  dark:border-orange-100 sm:text-lg'
+          className='mt-7 self-start rounded-md border-2 border-black px-5 py-3 text-sm  dark:border-white sm:text-lg'
         >
-          Explore curriculum!
+          Get Started Now!
         </Link>
         <Link
           href='#choose'
-          className='mt-24 animate-bounce cursor-pointer self-center justify-self-end rounded-3xl border-2 border-orange-500 p-3 text-2xl'
+          className='mt-24 animate-bounce cursor-pointer self-center justify-self-end rounded-3xl border-2 dark:border-white border-black p-3 text-2xl'
         >
           <LiaArrowDownSolid />
         </Link>
@@ -151,7 +151,7 @@ export default function Home() {
       >
         <div className='flex flex-col gap-5'>
           <h1 className='text-3xl font-bold md:text-4xl'>Why choose us?</h1>
-          <div className='h-1 w-24 bg-orange-500'></div>
+          <div className='h-1 w-24 bg-white'></div>
         </div>
 
         <section className='flex flex-col gap-5 md:flex-row'>
@@ -162,7 +162,7 @@ export default function Home() {
                 className='flex flex-col items-center gap-5 rounded-lg p-6 text-center'
                 key={i}
               >
-                <span className='text-7xl text-orange-500'>{icon}</span>
+                <span className='text-7xl dark:text-white'>{icon}</span>
                 <p className='text-2xl font-semibold'>{title}</p>
                 <p className=' text-base'>{content}</p>
               </div>
@@ -175,7 +175,7 @@ export default function Home() {
           <h1 className='text-3xl font-bold md:text-4xl'>
             What you will learn
           </h1>
-          <div className='h-1 w-24 bg-orange-500'></div>
+          <div className='h-1 w-24 bg-white'></div>
         </div>
         <section className='grid grid-cols-12 gap-7'>
           {technologies.map((technology, i) => {
@@ -199,7 +199,7 @@ export default function Home() {
       <article className='mx-auto flex w-11/12 flex-col gap-10 pb-20 pt-20 sm:max-w-7xl'>
         <div className='flex flex-col gap-5'>
           <h1 className='text-3xl font-bold md:text-4xl'>Free web templates</h1>
-          <div className='h-1 w-24 bg-orange-500'></div>
+          <div className='h-1 w-24 bg-white'></div>
         </div>
         <div className='mb-10'>
           <p>
@@ -217,7 +217,7 @@ export default function Home() {
               'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fmiro.medium.com%2Fmax%2F3200%2F0*OFrVIaXkKTr6Fnqh&f=1&nofb=1&ipt=5fbb07c45fd33a7d2c707b34e38c2475c7ed331276890f4c3cb0d35a17929785&ipo=images'
             }
           />
-          <button className='rounded border-none bg-orange-500 px-4 py-3 text-base text-white'>
+          <button className='rounded border-none dark:bg-white bg-black px-4 py-3 text-base text-white dark:text-black'>
             Browse for More
           </button>
         </div>

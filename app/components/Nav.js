@@ -31,29 +31,29 @@ export default function Nav() {
       <div className='container mx-auto my-0 flex w-11/12 items-center justify-between py-7 sm:max-w-7xl'>
         <Link
           href='/'
-          className={`bg-gradient-to-r from-pink-600 to-yellow-400 bg-clip-text text-xl text-transparent ${inter.className}`}
+          className={`bg-gradient-to-r from-blue-300 to-blue-800 bg-clip-text text-xl text-transparent ${inter.className}`}
         >
           safwahdev
         </Link>
         <nav className='hidden md:block'>
           <ul className='flex items-center gap-3 text-sm md:gap-4'>
-            <li className='border-b-2 border-b-transparent px-1 py-3 hover:border-orange-500 hover:text-orange-500 hover:transition-all hover:duration-150 hover:ease-in-out dark:text-orange-50 dark:hover:text-orange-500'>
+            <li className='border-b-2 border-b-transparent px-1 py-5 hover:border-white hover:transition-all hover:duration-150 hover:ease-in-out'>
               <Link href='bootcamp'>Bootcamps</Link>
             </li>
-            <li className='border-b-2 border-b-transparent px-1 py-3 hover:border-orange-500 hover:text-orange-500 hover:transition-all hover:duration-150 hover:ease-in-out dark:text-orange-50 dark:hover:text-orange-500'>
+            <li className='border-b-2 border-b-transparent px-1 py-5 hover:border-white hover:transition-all hover:duration-150 hover:ease-in-out'>
               <Link href='bootcamp'>Get certified</Link>
             </li>
-            <li className='relative border-b-2 border-b-transparent px-1 py-3 hover:border-orange-500 hover:text-orange-500 hover:transition-all hover:duration-150 hover:ease-in-out dark:text-orange-50 dark:hover:text-orange-500'>
+            <li className='relative border-b-2 border-b-transparent px-1 py-5 hover:border-white hover:transition-all hover:duration-150 hover:ease-in-out'>
               <span class='absolute right-0 top-1 flex h-3 w-3'>
-                <span class='absolute inline-flex h-full w-full animate-ping rounded-full bg-orange-500 opacity-75'></span>
-                <span class='relative inline-flex h-3 w-3 rounded-full bg-orange-500'></span>
+                <span class='absolute inline-flex h-full w-full animate-ping rounded-full bg-blue-300 opacity-75'></span>
+                <span class='relative inline-flex h-3 w-3 rounded-full bg-blue-400'></span>
               </span>
               <Link href='bootcamp'>Templates</Link>
             </li>
           </ul>
         </nav>
         <div className='hidden md:block'>
-          <div className='flex items-center gap-2 dark:text-orange-50'>
+          <div className='flex items-center gap-2'>
             <div className='flex items-center justify-center'>
               {currentTheme === 'dark' ? (
                 <HiSun
@@ -72,7 +72,7 @@ export default function Nav() {
             </Link>
             <Link
               href='#'
-              className='rounded-lg bg-orange-500 bg-gradient-to-r px-3 py-2 text-white'
+              className='rounded-lg bg-white bg-gradient-to-r px-3 py-2 text-black'
             >
               Get started
             </Link>
@@ -88,8 +88,8 @@ export default function Nav() {
       <div
         className={
           isOpen
-            ? 'mx-auto my-0 w-10/12 rounded-md bg-gradient-to-tr from-pink-600 to-yellow-400 p-5 text-white transition duration-100 md:hidden'
-            : 'mx-auto my-0 hidden w-10/12 rounded-md bg-gradient-to-tr from-pink-600 to-yellow-400 p-5 text-white transition duration-100 md:hidden'
+            ? 'mx-auto my-0 w-10/12 rounded-md bg-white p-5 text-black transition duration-100 md:hidden'
+            : 'mx-auto my-0 hidden w-10/12 rounded-md bg-white p-5 text-black transition duration-100 md:hidden'
         }
       >
         <ul className='flex flex-col gap-2'>
@@ -103,7 +103,7 @@ export default function Nav() {
             <Link href='bootcamp'>Get certified</Link>
           </li>
         </ul>
-        <div className='mt-6 grid items-center gap-3 dark:text-orange-50'>
+        <div className='mt-6 grid items-center gap-3'>
           <div className='flex cursor-pointer items-center justify-center'>
             {currentTheme === 'dark' ? (
               <HiSun onClick={() => setTheme('light')} className='text-2xl' />
@@ -113,13 +113,13 @@ export default function Nav() {
           </div>
           <Link
             href='#'
-            className='px-3 py-3 text-center hover:rounded hover:bg-orange-500 dark:hover:bg-black'
+            className='px-3 py-3 text-center hover:rounded hover:bg-black dark:hover:bg-black dark:hover:text-white'
           >
             Sign in
           </Link>
           <Link
             href='#'
-            className='px-3 py-3 text-center text-orange-50 hover:rounded hover:bg-orange-500 dark:hover:bg-black'
+            className='px-3 py-3 text-center  hover:rounded hover:bg-black dark:hover:bg-black dark:hover:text-white'
           >
             Sign up
           </Link>

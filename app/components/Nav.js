@@ -88,18 +88,18 @@ export default function Nav() {
       <div
         className={
           isOpen
-            ? 'mx-auto my-0 w-10/12 rounded-md bg-white p-5 text-black transition duration-100 md:hidden'
-            : 'mx-auto my-0 hidden w-10/12 rounded-md bg-white p-5 text-black transition duration-100 md:hidden'
+            ? 'mx-auto my-0 w-10/12 rounded-md bg-black dark:bg-white text-white p-5 dark:text-black transition duration-150 md:hidden'
+            : 'mx-auto my-0 hidden w-10/12 rounded-md bg-black dark:bg-white text-white p-5 dark:text-black transition duration-150 md:hidden'
         }
       >
         <ul className='flex flex-col gap-2'>
-          <li className='border-b-2 border-b-transparent px-1 py-3 text-center hover:rounded hover:bg-black hover:text-white  hover:transition-all hover:duration-150 hover:ease-in-out'>
+          <li className='px-1 py-3 text-center hover:rounded-md dark:text-black dark:hover:bg-black hover:bg-white dark:hover:text-white dark:hover:border-white hover:border-black  hover:transition-all hover:duration-150 hover:ease-in-out hover:text-black'>
             <Link href='paths'>Syllabus</Link>
           </li>
-          <li className='border-b-2 border-b-transparent px-1 py-3 text-center hover:rounded hover:bg-black hover:text-white  hover:transition-all hover:duration-150 hover:ease-in-out'>
+          <li className='px-1 py-3 text-center hover:rounded-md dark:text-black dark:hover:bg-black hover:bg-white dark:hover:text-white dark:hover:border-white hover:border-black  hover:transition-all hover:duration-150 hover:ease-in-out hover:text-black'>
             <Link href='bootcamp'>Bootcamps</Link>
           </li>
-          <li className='border-b-2 border-b-transparent px-1 py-3 text-center hover:rounded hover:bg-black hover:text-white  hover:transition-all hover:duration-150 hover:ease-in-out'>
+          <li className='px-1 py-3 text-center hover:rounded-md dark:text-black dark:hover:bg-black hover:bg-white dark:hover:text-white dark:hover:border-white hover:border-black  hover:transition-all hover:duration-150 hover:ease-in-out hover:text-black'>
             <Link href='bootcamp'>Get certified</Link>
           </li>
         </ul>
@@ -113,13 +113,13 @@ export default function Nav() {
           </div>
           <Link
             href='#'
-            className='px-3 py-3 text-center hover:rounded hover:bg-black dark:hover:bg-black dark:hover:text-white'
+            className='px-3 py-3 text-center hover:rounded hover:bg-white hover:text-black dark:hover:bg-black dark:hover:text-white'
           >
             Sign in
           </Link>
           <Link
             href='#'
-            className='px-3 py-3 text-center  hover:rounded hover:bg-black dark:hover:bg-black dark:hover:text-white'
+            className='px-3 py-3 text-center  hover:rounded hover:bg-white hover:text-black dark:hover:bg-black dark:hover:text-white'
           >
             Sign up
           </Link>

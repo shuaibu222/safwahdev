@@ -127,14 +127,14 @@ export default function Home() {
             Software Engineer
           </span>
         </h1>
-        <p className='text-base dark:text-orange-50 sm:w-2/3 md:w-1/2 md:text-lg'>
+        <p className='text-base dark:text-orange-50 sm:w-2/3 md:w-1/2'>
           with this intensive Frontend Engineer Roadmap designed with resources to
           guide you succeed in the web development industry
           <br /> from zero to pro!
         </p>
         <Link
           href='signup'
-          className='mt-7 self-start rounded-md border-2 border-black px-5 py-3 text-sm  dark:border-white sm:text-lg'
+          className='mt-7 self-start rounded-md border-2 outline-none hover:bg-white hover:text-black hover:transition-all hover:duration-150 hover:ease-in-out hover:border-black bg-black text-white dark:bg-white dark:text-black dark:hover:bg-midnight dark:hover:text-white px-5 py-3 text-sm  dark:border-white sm:text-lg'
         >
           Get Started Now!
         </Link>
@@ -150,8 +150,8 @@ export default function Home() {
         id='choose'
       >
         <div className='flex flex-col gap-5'>
-          <h1 className='text-3xl font-bold md:text-4xl'>Why choose us?</h1>
-          <div className='h-1 w-24 bg-white'></div>
+          <h1 className='text-3xl font-bold md:text-4xl '>Why choose us?</h1>
+          <div className='h-1 w-24 dark:bg-white bg-black'></div>
         </div>
 
         <section className='flex flex-col gap-5 md:flex-row'>
@@ -175,7 +175,7 @@ export default function Home() {
           <h1 className='text-3xl font-bold md:text-4xl'>
             What you will learn
           </h1>
-          <div className='h-1 w-24 bg-white'></div>
+          <div className='h-1 w-24 dark:bg-white bg-black'></div>
         </div>
         <section className='grid grid-cols-12 gap-7'>
           {technologies.map((technology, i) => {
@@ -183,7 +183,7 @@ export default function Home() {
             return (
               <div
                 key={i}
-                className={`grid place-content-center gap-3 px-10 py-8 hover:transition-all hover:delay-75`}
+                className={`grid place-content-center gap-3 px-10 py-8 hover:transition-all hover:duration-150 hover:ease-in-out`}
               >
                 <div
                   className={`grid place-content-center ${bgcolor} hover:delay-50 text-9xl hover:transition`}
@@ -199,7 +199,7 @@ export default function Home() {
       <article className='mx-auto flex w-11/12 flex-col gap-10 pb-20 pt-20 sm:max-w-7xl'>
         <div className='flex flex-col gap-5'>
           <h1 className='text-3xl font-bold md:text-4xl'>Free web templates</h1>
-          <div className='h-1 w-24 bg-white'></div>
+          <div className='h-1 w-24 dark:bg-white bg-black'></div>
         </div>
         <div className='mb-10'>
           <p>
@@ -217,7 +217,7 @@ export default function Home() {
               'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fmiro.medium.com%2Fmax%2F3200%2F0*OFrVIaXkKTr6Fnqh&f=1&nofb=1&ipt=5fbb07c45fd33a7d2c707b34e38c2475c7ed331276890f4c3cb0d35a17929785&ipo=images'
             }
           />
-          <button className='rounded border-none dark:bg-white bg-black px-4 py-3 text-base text-white dark:text-black'>
+          <button className='rounded-md outline-none hover:transition-all hover:ease-in-out hover:duration-150 border-2 dark:bg-white bg-black px-4 py-3 text-base hover:bg-white dark:hover:border-white dark:hover:bg-midnight dark:hover:text-white hover:border-black hover:text-black text-white dark:text-black'>
             Browse for More
           </button>
         </div>

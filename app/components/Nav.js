@@ -27,11 +27,13 @@ export default function Nav() {
   const currentTheme = theme === 'system' ? systemTheme : theme;
 
   return (
-    <header>
+    <header className={`inset-0 bg-opacity-10 -z-10 backdrop-blur-lg ${
+            isOpen ? 'bg-inherit' : 'bg-white'
+          } transition duration-300`}>
       <div className='container mx-auto my-0 flex w-11/12 items-center justify-between py-7 sm:max-w-7xl'>
-        <Link
+      <Link
           href='/'
-          className={`bg-gradient-to-r from-blue-300 to-blue-800 bg-clip-text text-xl text-transparent ${inter.className}`}
+          className={`text-xl ${inter.className}`}
         >
           safwahdev
         </Link>
@@ -73,14 +75,14 @@ export default function Nav() {
                 />
               )}
             </div>
-            <Link href='#' className='px-3 py-2'>
+            <Link href='#' className='px-3 py-2 outline-none border-2 hover:border-black dark:hover:border-white rounded-md border-transparent'>
               Sign in
             </Link>
             <Link
               href='#'
-              className='rounded-lg bg-white bg-gradient-to-r px-3 py-2 text-black'
+              className='rounded-lg outline-none border-2 dark:hover:border-white dark:hover:text-white dark:hover:bg-midnight hover:transition-all hover:duration-150 via-white hover:ease-in-out dark:bg-white bg-gradient-to-r px-3 py-2 bg-black text-white hover:bg-white hover:border-black hover:text-black dark:text-black'
             >
-              Get started
+              Sign up
             </Link>
           </div>
         </div>
@@ -92,10 +94,10 @@ export default function Nav() {
         </div>
       </div>
       <div
-        className={
+        className={`mx-auto my-0 w-10/12 rounded-md bg-black dark:bg-white text-white p-5 dark:text-black transition duration-150 md:hidden ${
           isOpen
-            ? 'mx-auto my-0 w-10/12 rounded-md bg-black dark:bg-white text-white p-5 dark:text-black transition duration-150 md:hidden'
-            : 'mx-auto my-0 hidden w-10/12 rounded-md bg-black dark:bg-white text-white p-5 dark:text-black transition duration-150 md:hidden'
+            ? 'block'
+            : 'hidden'}`
         }
       >
         <ul className='flex flex-col gap-2'>

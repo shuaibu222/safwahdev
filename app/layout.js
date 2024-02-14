@@ -10,8 +10,11 @@ export const metadata = {
     'a roadmap-guided coding school aim to provide a comprehensive roadmap for web developers',
   charset: 'UTF-8',
   author: 'shuaibu abdulkadir hussain',
-  viewport: 'width=device-width, initial-scale=1.0',
 };
+
+export const viewport = {
+  viewport: 'width=device-width, initial-scale=1.0',
+}
 
 export default function RootLayout({ children }) {
   return (

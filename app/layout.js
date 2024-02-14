@@ -5,7 +5,7 @@ import Providers from './components/providers';
 const inter = Poppins({ subsets: ['latin'], weight: '400' });
 
 export const metadata = {
-  title: 'Safwahdev Coding School',
+  title: 'Safwahdev Academy',
   description:
     'a roadmap-guided coding school aim to provide a comprehensive roadmap for web developers',
   charset: 'UTF-8',

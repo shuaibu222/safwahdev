@@ -38,17 +38,23 @@ export default function Nav() {
         <nav className='hidden md:block'>
           <ul className='flex items-center gap-3 text-sm md:gap-4'>
             <li className='border-b-2 border-b-transparent px-1 py-5 dark:hover:border-white hover:border-black hover:transition-all hover:duration-150 hover:ease-in-out'>
+              
+              {/* Video courses mini-bootcamps free/premium */}
               <Link href='bootcamp'>Bootcamps</Link>
             </li>
             <li className='border-b-2 border-b-transparent px-1 py-5 dark:hover:border-white hover:border-black hover:transition-all hover:duration-150 hover:ease-in-out'>
+              
+              {/* premium projects for frontend and backend to be eligible for certification*/}
               <Link href='bootcamp'>Get certified</Link>
             </li>
             <li className='relative border-b-2 border-b-transparent px-1 py-5 dark:hover:border-white hover:border-black hover:transition-all hover:duration-150 hover:ease-in-out'>
               <span class='absolute right-0 top-1 flex h-3 w-3'>
-                <span class='absolute inline-flex h-full w-full animate-ping rounded-full bg-blue-300 opacity-75'></span>
-                <span class='relative inline-flex h-3 w-3 rounded-full bg-blue-400'></span>
+                <span class='absolute inline-flex h-full w-full animate-ping rounded-full bg-white opacity-75'></span>
+                <span class='relative inline-flex h-3 w-3 rounded-full bg-white'></span>
               </span>
-              <Link href='bootcamp'>Templates</Link>
+              
+              {/* All challenges free/premium */}
+              <Link href='bootcamp'>Challenges</Link>
             </li>
           </ul>
         </nav>

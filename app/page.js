@@ -34,7 +34,7 @@ const chooseData = [
     icon: <SiInstructure />,
     title: 'Structured Roadmap',
     content:
-      'Our frontend engineering roadmap is carefully designed to take you on a step-by-step journey from the fundamentals of HTML, CSS, and JavaScript to advanced topics like React, Angular, and Vue.js.',
+      'Our frontend engineering roadmap is carefully designed to take you on a step-by-step journey from the fundamentals of every software engineer, Frontend and its frameworks to advanced topics like Backend, Databases, and Cloud.',
   },
   {
     icon: <TbWorldCode />,
@@ -44,7 +44,7 @@ const chooseData = [
   },
   {
     icon: <BiSolidTime />,
-    title: 'Flexibility and Convenience',
+    title: 'Flexibility',
     content:
       'Learning should fit into your schedule. With our online courses, you can study at your own pace, from the comfort of your home or anywhere with an internet connection.',
   },
@@ -134,9 +134,9 @@ export default function Home() {
         </p>
         <Link
           href='signup'
-          className='mt-7 self-start rounded-md border-2 outline-none hover:bg-white hover:text-black hover:transition-all hover:duration-150 hover:ease-in-out hover:border-black bg-black text-white dark:bg-white dark:text-black dark:hover:bg-midnight dark:hover:text-white px-5 py-3 text-sm  dark:border-white sm:text-lg'
+          className='mt-7 self-start rounded-md border-2 outline-none hover:bg-white hover:text-black hover:transition-all hover:duration-150 hover:ease-in-out hover:border-black bg-black text-white dark:bg-white dark:text-black dark:hover:bg-midnight dark:hover:text-white px-5 py-3 text-sm md:text-base  dark:border-white'
         >
-          Get Started Now!
+          Start now!
         </Link>
         
         </div>

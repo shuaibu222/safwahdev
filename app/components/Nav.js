@@ -37,13 +37,13 @@ export default function Nav() {
         </Link>
         <nav className='hidden md:block'>
           <ul className='flex items-center gap-3 text-sm md:gap-4'>
-            <li className='border-b-2 border-b-transparent px-1 py-5 hover:border-white hover:transition-all hover:duration-150 hover:ease-in-out'>
+            <li className='border-b-2 border-b-transparent px-1 py-5 dark:hover:border-white hover:border-black hover:transition-all hover:duration-150 hover:ease-in-out'>
               <Link href='bootcamp'>Bootcamps</Link>
             </li>
-            <li className='border-b-2 border-b-transparent px-1 py-5 hover:border-white hover:transition-all hover:duration-150 hover:ease-in-out'>
+            <li className='border-b-2 border-b-transparent px-1 py-5 dark:hover:border-white hover:border-black hover:transition-all hover:duration-150 hover:ease-in-out'>
               <Link href='bootcamp'>Get certified</Link>
             </li>
-            <li className='relative border-b-2 border-b-transparent px-1 py-5 hover:border-white hover:transition-all hover:duration-150 hover:ease-in-out'>
+            <li className='relative border-b-2 border-b-transparent px-1 py-5 dark:hover:border-white hover:border-black hover:transition-all hover:duration-150 hover:ease-in-out'>
               <span class='absolute right-0 top-1 flex h-3 w-3'>
                 <span class='absolute inline-flex h-full w-full animate-ping rounded-full bg-blue-300 opacity-75'></span>
                 <span class='relative inline-flex h-3 w-3 rounded-full bg-blue-400'></span>

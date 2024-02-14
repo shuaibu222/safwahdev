@@ -3,11 +3,11 @@ import Link from 'next/link';
 import { LiaArrowDownSolid } from 'react-icons/lia';
 import { SiInstructure, SiWebpack, SiJest } from 'react-icons/si';
 import { TbWorldCode, TbBrandNextjs } from 'react-icons/tb';
+import { MdOutlineComputer } from "react-icons/md";
 import {
   BiSolidTime,
   BiLogoJavascript,
   BiLogoTailwindCss,
-  BiLogoTypescript,
 } from 'react-icons/bi';
 import {
   FaNpm,
@@ -117,7 +117,8 @@ export default function Home() {
   return (
     <main className='min-h-screen'>
       <Nav />
-      <section className='mx-auto flex w-11/12 flex-col pb-16 pt-28 sm:max-w-7xl'>
+      <section className='mx-auto flex gap-12 md:gap-0 flex-col w-11/12 pb-16 pt-28 sm:max-w-7xl md:flex-row'>
+        <div className='flex flex-col'>
         <h1 className='sm:text-xlg flex flex-col gap-1 text-lg dark:text-white md:text-2xl'>
           Become a
           <br />
@@ -129,8 +130,7 @@ export default function Home() {
         </h1>
         <p className='text-base dark:text-orange-50 sm:w-2/3 md:w-1/2'>
           with this intensive Frontend Engineer Roadmap designed with resources to
-          guide you succeed in the web development industry
-          <br /> from zero to pro!
+          guide you succeed in the web development industry from zero to pro!
         </p>
         <Link
           href='signup'
@@ -138,12 +138,17 @@ export default function Home() {
         >
           Get Started Now!
         </Link>
-        <Link
+        
+        </div>
+        <div className='self-center md:self-end md:relative md:bottom-16 md:right-16 text-highfont lg:text-highestfont '>
+          <MdOutlineComputer />
+        </div>
+        {/* <Link
           href='#choose'
-          className='mt-24 animate-bounce cursor-pointer self-center justify-self-end rounded-3xl border-2 dark:border-white border-black p-3 text-2xl'
+          className='mt-24 animate-bounce cursor-pointer absolute top-3/4 left-2/4 rounded-3xl border-2 dark:border-white border-black p-3 text-2xl'
         >
           <LiaArrowDownSolid />
-        </Link>
+        </Link> */}
       </section>
       <article
         className='mx-auto flex w-11/12 flex-col gap-20 pb-20 pt-20 sm:max-w-7xl'

@@ -17,6 +17,10 @@ module.exports = {
       colors: {
         'midnight': '#060515',
       },
+      fontSize: {
+        highfont: '21rem',
+        highestfont: '26rem'
+      }
     },
     
   },

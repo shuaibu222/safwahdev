@@ -27,7 +27,7 @@ export default function Nav() {
   const currentTheme = theme === 'system' ? systemTheme : theme;
 
   return (
-    <header className={`inset-0 bg-opacity-10 -z-10 backdrop-blur-lg ${
+    <header className={`inset-0 bg-opacity-10 -z-10 shadow-[rgba(149,157,165,0.2)_0px_8px_24px] dark:shadow-inner backdrop-blur-lg ${
             isOpen ? 'bg-inherit' : 'bg-white'
           } transition duration-300`}>
       <div className='container mx-auto my-0 flex w-11/12 items-center justify-between py-7 sm:max-w-7xl'>
@@ -50,9 +50,9 @@ export default function Nav() {
               <Link href='bootcamp'>Get certified</Link>
             </li>
             <li className='relative border-b-2 border-b-transparent px-1 py-5 dark:hover:border-white hover:border-black hover:transition-all hover:duration-150 hover:ease-in-out'>
-              <span class='absolute right-0 top-1 flex h-3 w-3'>
-                <span class='absolute inline-flex h-full w-full animate-ping rounded-full bg-white opacity-75'></span>
-                <span class='relative inline-flex h-3 w-3 rounded-full bg-white'></span>
+              <span className='absolute right-0 top-1 flex h-3 w-3'>
+                <span className='absolute inline-flex h-full w-full animate-ping rounded-full bg-white opacity-75'></span>
+                <span className='relative inline-flex h-3 w-3 rounded-full bg-white'></span>
               </span>
               
               {/* All challenges free/premium */}
@@ -82,7 +82,7 @@ export default function Nav() {
               href='#'
               className='rounded-lg outline-none border-2 dark:hover:border-white dark:hover:text-white dark:hover:bg-midnight hover:transition-all hover:duration-150 via-white hover:ease-in-out dark:bg-white bg-gradient-to-r px-3 py-2 bg-black text-white hover:bg-white hover:border-black hover:text-black dark:text-black'
             >
-              Sign up
+              Get started
             </Link>
           </div>
         </div>

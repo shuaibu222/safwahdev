@@ -12,7 +12,7 @@ module.exports = {
   theme: {
     extend: {
       gridTemplateColumns: {
-        12: 'repeat(auto-fit, minmax(180px, 1fr))',
+        autoFit: 'repeat(auto-fit, minmax(200px, 1fr))',
       },
       colors: {
         'midnight': '#060515',
@@ -20,7 +20,7 @@ module.exports = {
       fontSize: {
         highfont: '21rem',
         highestfont: '26rem'
-      }
+      },
     },
     
   },

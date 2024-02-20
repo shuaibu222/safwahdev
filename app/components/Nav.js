@@ -33,7 +33,7 @@ export default function Nav() {
       <div className='container mx-auto my-0 flex w-11/12 items-center justify-between py-7 sm:max-w-7xl'>
       <Link
           href='/'
-          className={`text-xl ${inter.className}`}
+          className={`text-[1.3rem] ${inter.className}`}
         >
           safwahdev
         </Link>

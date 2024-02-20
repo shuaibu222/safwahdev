@@ -17,7 +17,7 @@ const Nav = dynamic(() => import('./components/Nav'), {
 
 const technologies = [
   {
-    name: 'Introduction',
+    name: 'Fundamentals',
     icon: <PiProjectorScreenChartFill/>,
   },
   {
@@ -61,7 +61,7 @@ export default function Home() {
           <MdOutlineComputer />
         </div>
       </article>
-      <article className='mx-auto shadow-[0_48px_100px_0_rgba(17,12,46,0.15)] flex w-11/12 flex-col gap-8 py-16 px-10 rounded-2xl sm:max-w-7xl my-20 inset-0 bg-opacity-10 -z-10 backdrop-blur-lg bg-white'>
+      <article className='mx-auto shadow-[0_30px_80px_30px_rgba(17,12,46,0.15)] flex w-11/12 flex-col gap-8 py-16 px-10 rounded-2xl sm:max-w-7xl my-20 inset-0 bg-opacity-10 -z-10 backdrop-blur-lg bg-white'>
         <div className='flex flex-col gap-5 self-center mb-8'>
           <h1 className='text-3xl font-bold md:text-4xl'>
             Explore roadmap

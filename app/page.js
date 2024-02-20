@@ -51,7 +51,7 @@ export default function Home() {
           </p>
           <div className='mt-5 flex flex-col md:flex-row gap-3'>
             <input name='email' type='email' className='p-3 rounded-md outline-none border-slate-400 border-[1px]' placeholder='Download free roadmap PDF!' />
-            <button className='rounded-md self-start outline-none hover:transition-all hover:ease-in-out hover:duration-150 border-2 dark:border-orange-500 dark:bg-orange-500 bg-orange-500 px-4 py-3 text-base hover:bg-white dark:hover:border-orange-500 dark:hover:bg-midnight dark:hover:text-white hover:border-orange-500 hover:text-black text-white dark:text-white'>
+            <button className='rounded-md self-start outline-none hover:transition-all hover:ease-in-out hover:duration-150 border-2 dark:border-orange-500 dark:bg-orange-500 bg-orange-500 px-4 py-3 text-base hover:bg-white dark:hover:border-orange-500 dark:hover:bg-midnight dark:hover:text-white hover:border-orange-500 border-orange-500 hover:text-black text-white dark:text-white'>
               Download
             </button>
           </div>

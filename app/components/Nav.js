@@ -1,14 +1,14 @@
 'use client';
 
 import React, { useEffect, useState } from 'react';
-import { Poppins } from 'next/font/google';
+import { Rubik } from 'next/font/google';
 import Link from 'next/link';
 import { useTheme } from 'next-themes';
 import { HiSun, HiMoon } from 'react-icons/hi';
 import { IoIosMenu } from 'react-icons/io';
 import { LiaTimesSolid } from 'react-icons/lia';
 
-const inter = Poppins({ subsets: ['devanagari'], weight: '700' });
+const inter = Rubik({ subsets: ['latin'], weight: '700' });
 
 export default function Nav() {
   const { systemTheme, theme, setTheme } = useTheme();
@@ -38,7 +38,7 @@ export default function Nav() {
           safwahdev
         </Link>
         <nav className='hidden md:block'>
-          <ul className='flex items-center gap-3 text-sm md:gap-4'>
+          <ul className='flex items-center gap-3 md:gap-4'>
             <li className='border-b-2 border-b-transparent px-1 py-5 dark:hover:border-white hover:border-black hover:transition-all hover:duration-150 hover:ease-in-out'>
               
               {/* Video courses mini-bootcamps free/premium */}

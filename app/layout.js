@@ -1,8 +1,8 @@
 import './globals.css';
-import { Poppins, Lato } from 'next/font/google';
+import { Rubik } from 'next/font/google';
 import Providers from './components/providers';
 
-const inter = Poppins({ subsets: ['latin'], weight: '400' });
+const inter = Rubik({ subsets: ['latin'], weight: '400' });
 
 export const metadata = {
   title: 'Safwahdev Academy',
@@ -20,7 +20,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang='en' className='scroll-smooth dark'>
       <body
-        className={`bg-white text-base dark:bg-midnight ${inter.className}`}
+        className={`bg-white tracking-wide text-base dark:bg-midnight ${inter.className}`}
       >
         <Providers>{children}</Providers>
       </body>

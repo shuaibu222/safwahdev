@@ -7,9 +7,9 @@ const inter = Rubik({ subsets: ['latin'], weight: '400' });
 export const metadata = {
   title: 'Safwahdev Academy',
   description:
-    'a roadmap-guided coding school aim to provide a comprehensive roadmap for web developers',
+    'a multi-purpose coding school aim to provide a comprehensive roadmap for web developers',
   charset: 'UTF-8',
-  author: 'shuaibu abdulkadir hussain',
+  author: 'Safwahdev Academy',
 };
 
 export const viewport = {

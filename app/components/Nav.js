@@ -47,7 +47,7 @@ export default function Nav() {
             <li className='border-b-2 border-b-transparent px-1 py-5 dark:hover:border-white hover:border-black hover:transition-all hover:duration-150 hover:ease-in-out'>
               
               {/* premium projects for frontend and backend to be eligible for certification*/}
-              <Link href='bootcamp'>Get certified</Link>
+              <Link href='certified'>Get certified</Link>
             </li>
             <li className='relative border-b-2 border-b-transparent px-1 py-5 dark:hover:border-white hover:border-black hover:transition-all hover:duration-150 hover:ease-in-out'>
               <span className='absolute right-0 top-1 flex h-3 w-3'>
@@ -56,7 +56,7 @@ export default function Nav() {
               </span>
               
               {/* All challenges free/premium */}
-              <Link href='bootcamp'>Challenges</Link>
+              <Link href='challenges'>Challenges</Link>
             </li>
           </ul>
         </nav>
@@ -102,13 +102,13 @@ export default function Nav() {
       >
         <ul className='flex flex-col gap-2'>
           <li className='px-1 py-3 text-center hover:rounded-md dark:text-black dark:hover:bg-black hover:bg-white dark:hover:text-white dark:hover:border-white hover:border-black  hover:transition-all hover:duration-150 hover:ease-in-out hover:text-black'>
-            <Link href='paths'>Syllabus</Link>
-          </li>
-          <li className='px-1 py-3 text-center hover:rounded-md dark:text-black dark:hover:bg-black hover:bg-white dark:hover:text-white dark:hover:border-white hover:border-black  hover:transition-all hover:duration-150 hover:ease-in-out hover:text-black'>
             <Link href='bootcamp'>Bootcamps</Link>
           </li>
           <li className='px-1 py-3 text-center hover:rounded-md dark:text-black dark:hover:bg-black hover:bg-white dark:hover:text-white dark:hover:border-white hover:border-black  hover:transition-all hover:duration-150 hover:ease-in-out hover:text-black'>
-            <Link href='bootcamp'>Get certified</Link>
+            <Link href='certified'>Get certified</Link>
+          </li>
+          <li className='px-1 py-3 text-center hover:rounded-md dark:text-black dark:hover:bg-black hover:bg-white dark:hover:text-white dark:hover:border-white hover:border-black  hover:transition-all hover:duration-150 hover:ease-in-out hover:text-black'>
+            <Link href='challenges'>Challenges</Link>
           </li>
         </ul>
         <div className='mt-6 grid items-center gap-3'>

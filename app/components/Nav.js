@@ -51,8 +51,8 @@ export default function Nav() {
             </li>
             <li className='relative border-b-2 border-b-transparent px-1 py-5 dark:hover:border-white hover:border-black hover:transition-all hover:duration-150 hover:ease-in-out'>
               <span className='absolute right-0 top-1 flex h-3 w-3'>
-                <span className='absolute inline-flex h-full w-full animate-ping rounded-full bg-white opacity-75'></span>
-                <span className='relative inline-flex h-3 w-3 rounded-full bg-white'></span>
+                <span className='absolute inline-flex h-full w-full animate-ping rounded-full bg-black dark:bg-white opacity-75'></span>
+                <span className='relative inline-flex h-3 w-3 rounded-full bg-black dark:bg-white'></span>
               </span>
               
               {/* All challenges free/premium */}
